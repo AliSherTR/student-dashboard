@@ -16,7 +16,7 @@ export default function EnrolledCourse() {
             </div>
 
             <div className=" flex gap-4">
-                <div className=" px-5 py-4  rounded-2xl flex-1 flex items-center bg-gradientPurple bg-opacity-60 box-content border-4 border-gradientPurple ">
+                <div className=" px-5 py-4  rounded-2xl flex-1 flex items-center justify-between bg-gradientPurple bg-opacity-60 box-content border-4 border-gradientPurple ">
                     <div className="">
                         <h2 className=" font-bold text-gradientPurple">
                             Object Oriented Programming
@@ -26,7 +26,7 @@ export default function EnrolledCourse() {
                     <img src={oop} alt="" />
                 </div>
 
-                <div className=" px-5 py-4  rounded-2xl flex-1 flex items-center bg-gradientPurple bg-opacity-60 ">
+                <div className=" px-5 py-4  rounded-2xl flex-1 flex items-center justify-between bg-gradientPurple bg-opacity-60 ">
                     <div>
                         <h2 className=" font-bold text-gradientPurple">
                             Fundamentals of Database Systems
