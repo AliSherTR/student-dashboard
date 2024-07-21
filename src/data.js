@@ -6,7 +6,9 @@ import dropSemesterIcon from "./assets/dropSemester.svg";
 import resultIcon from "./assets/result.svg";
 import noticeIcon from "./assets/notice.svg";
 import scheduleIcon from "./assets/schedule.svg";
-
+import coins from "./assets/coins.png";
+import cash from "./assets/cash.png";
+import chart from "./assets/chart.png";
 export const SideBarLinks = [
     {
         id: 0,
@@ -55,5 +57,26 @@ export const SideBarLinks = [
         title: "Schedule",
         destination: "/schedule",
         img: scheduleIcon,
+    },
+];
+
+export const financeCardData = [
+    {
+        id: 0,
+        image: coins,
+        amount: 1000,
+        text: "Total Payable",
+    },
+    {
+        id: 1,
+        image: cash,
+        amount: 5000,
+        text: "Total Paind",
+    },
+    {
+        id: 2,
+        image: chart,
+        amount: 300,
+        text: "Others",
     },
 ];
