@@ -1,11 +1,18 @@
+import { HiBars3BottomLeft } from "react-icons/hi2";
 import DashboardAvatar from "./DashboardAvatar";
 import NotificationIcon from "./NotificationIcon";
 
-export default function Header() {
+export default function Header({ sideBarHandler }) {
     return (
-        <nav className=" h-full flex items-center px-4">
-            <div className=" flex-1">
-                <div className=" relative w-1/3">
+        <nav className=" h-full shadow-lg rounded-xl flex items-center px-4">
+            <div className=" lg:flex-1 flex gap-1 items-center">
+                <button
+                    onClick={sideBarHandler}
+                    className=" xl:hidden block text-lg"
+                >
+                    <HiBars3BottomLeft size={30} />
+                </button>
+                <div className=" relative lg:w-1/3 w-full">
                     <input
                         type="text"
                         placeholder=""
@@ -17,10 +24,11 @@ export default function Header() {
                     </span>
                 </div>
             </div>
+            <div className=" flex items-center justify-end flex-1">
+                <DashboardAvatar />
 
-            <DashboardAvatar />
-
-            <NotificationIcon />
+                <NotificationIcon />
+            </div>
         </nav>
     );
 }

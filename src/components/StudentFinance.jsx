@@ -7,7 +7,7 @@ export default function StudentFinance() {
             <h3 className=" font-bold text-black mb-3 text-lg tracking-wider">
                 Finance
             </h3>
-            <div className=" flex gap-4">
+            <div className=" flex flex-col md:flex-row gap-4">
                 {financeCardData.map((item) => (
                     <FinanceCard
                         key={item.id}

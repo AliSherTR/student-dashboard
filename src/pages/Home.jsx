@@ -9,14 +9,14 @@ export default function Home() {
         <>
             <DashboardHero />
 
-            <div className="grid grid-cols-12 auto-rows-[minmax(0,_275px)] items-start gap-x-4">
-                <div className="col-start-1 col-end-10">
+            <div className="grid grid-cols-12 grid-rows-4 md:grid-rows-2 items-start gap-x-4 gap-y-0">
+                <div className="col-start-1 lg:col-end-10 col-span-full row-start-1 row-end-3 md:row-auto">
                     <StudentFinance />
                 </div>
-                <div className="col-start-1 col-end-10 row-start-2 row-end-3 mt-3">
+                <div className="col-start-1 lg:col-end-10 col-span-full row-start-3 md:row-auto row-end-5 mt-3">
                     <EnrolledCourse />
                 </div>
-                <div className="col-start-10 col-end-13 flex flex-col gap-3">
+                <div className="lg:col-start-10 col-start-1 col-span-full lg:col-end-13  md:mt-0 flex flex-col gap-3 row-start-4 row-end-6 md:row-start-1  row-span-full">
                     <CourseInstructors />
                     <DailyNews />
                 </div>

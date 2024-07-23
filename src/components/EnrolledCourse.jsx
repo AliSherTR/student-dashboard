@@ -15,7 +15,7 @@ export default function EnrolledCourse() {
                 </Link>
             </div>
 
-            <div className=" flex gap-4">
+            <div className=" flex flex-col md:flex-row gap-4">
                 <div className=" px-5 py-4  rounded-2xl flex-1 flex items-center justify-between bg-gradientPurple bg-opacity-60 box-content border-4 border-gradientPurple ">
                     <div className="">
                         <h2 className=" font-bold text-gradientPurple">
@@ -23,7 +23,7 @@ export default function EnrolledCourse() {
                         </h2>
                         <Button text="View" />
                     </div>
-                    <img src={oop} alt="" />
+                    <img src={oop} alt="" className="" />
                 </div>
 
                 <div className=" px-5 py-4  rounded-2xl flex-1 flex items-center justify-between bg-gradientPurple bg-opacity-60 ">
