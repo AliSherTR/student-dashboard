@@ -15,7 +15,7 @@ export default function DashboardLayout() {
                 <Header sideBarHandler={handleSideBar} />
             </header>
             <div
-                className={`absolute h-full w-[100vw] bg-black bg-opacity-35 inset-0 cursor-pointer ${
+                className={`fixed h-full w-[100vw] bg-black bg-opacity-35 inset-0 cursor-pointer ${
                     sideBarOpen ? " block " : "hidden "
                 } `}
                 onClick={handleSideBar}
